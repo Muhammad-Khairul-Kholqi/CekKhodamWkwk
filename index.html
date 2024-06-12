@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam Online Gratis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #result {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+    <div class="px-[20px]">
+        <div class="bg-white py-[40px] px-[60px] rounded-[10px] shadow border max-w-[700px]">
+            <p class="text-center font-bold text-[25px]">Cek Khodam Online Gratis</p>
+            <input 
+                id="nameInput"
+                class="flex-grow border p-2 w-full h-[40px] rounded-[5px] mt-[40px]"
+                type="text"
+                placeholder="Masukkan Nama Anda.."
+            >
+            <div class="flex justify-center flex-wrap items-center gap-[20px] mt-[10px]">
+                <button 
+                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded"
+                    onclick="cekKhodam()"
+                >
+                    Cek Khodam
+                </button>
+                <button 
+                    class="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded"
+                    onclick="resetForm()"
+                >
+                    Reset
+                </button>
+            </div>
+            <p id="result" class="text-[18px] mt-[20px] text-center">Khodam Anda Adalah: <span id="khodamName"></span></p>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
